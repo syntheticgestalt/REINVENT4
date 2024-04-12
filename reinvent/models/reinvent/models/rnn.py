@@ -1,6 +1,6 @@
 """LSTM (or GRU) RNN for the classical Reinvent de novo model"""
 
-from typing import Tuple, Dict, Sequence, Any
+from typing import Tuple, Dict, Sequence, Any, Union
 
 import torch
 import torch.nn as tnn
@@ -74,7 +74,7 @@ class RNN(tnn.Module):
     def forward(
             self,
             input_vector: torch.Tensor,
-            hidden_state: torch.Tensor | Sequence[torch.Tensor] = None,
+            hidden_state: Union[torch.Tensor, Sequence[torch.Tensor]] = None,
     ) -> Tuple[torch.Tensor, torch.Tensor]:
         """
         Performs a forward pass on the model. Note: you pass the **whole** sequence.

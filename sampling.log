@@ -1,0 +1,27 @@
+19:05:37 <INFO> Started REINVENT 4.2.5 (C) AstraZeneca 2017, 2023 on 2024-04-11
+19:05:37 <INFO> Command line: /Users/joel/Projects/REINVENT4/.venv/bin/reinvent -l sampling.log ./configs/toml/sampling.toml
+19:05:37 <INFO> Environment loaded from dotenv file
+19:05:37 <INFO> User joel on host Joels-MacBook-Pro.local
+19:05:37 <INFO> Python version 3.9.16
+19:05:37 <INFO> PyTorch version 2.2.2, git 39901f229520a5256505ec24782f716ee7ddc843
+19:05:37 <INFO> PyTorch compiled with CUDA version None
+19:05:37 <INFO> RDKit version 2023.09.5
+19:05:37 <INFO> Platform macOS-12.2.1-arm64-arm-64bit
+19:05:37 <INFO> Number of PyTorch CUDA devices 0
+19:05:37 <INFO> Using CPU arm
+19:05:37 <INFO> Writing JSON config file to /Users/joel/Projects/REINVENT4/_sampling.json
+19:05:37 <INFO> Starting Sampling
+19:05:37 <INFO> priors/linkinvent.prior has valid hash:
+{ 'comments': [],
+  'creation_date': 0,
+  'date_format': 'UNIX epoch',
+  'hash_id': '5792256bf6777dd630ed9ec66fbb4bbc',
+  'hash_id_format': 'xxhash.xxh3_128_hex 3.4.1',
+  'model_id': '775a89b0b0ee42aaa7ec189c16614b4d',
+  'model_id_format': 'uuid.uuid4 3.10.12',
+  'origina_data_source': 'ChEMBL 27',
+  'updates': []}
+19:05:37 <INFO> Number of network parameters: 23,682,594
+19:05:37 <INFO> Using generator Linkinvent
+19:05:37 <INFO> Writing sampled SMILES to CSV file sampling.csv
+19:05:37 <INFO> Sampling 157 SMILES from model priors/linkinvent.prior

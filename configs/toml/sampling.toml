@@ -3,7 +3,7 @@
 
 
 run_type = "sampling"
-use_cuda = true  # run on the GPU if true, on the CPU if false
+use_cuda = false  # run on the GPU if true, on the CPU if false
 json_out_config = "_sampling.json"  # write this TOML to JSON
 
 
@@ -13,15 +13,15 @@ json_out_config = "_sampling.json"  # write this TOML to JSON
 # file and possibly a SMILES file with seed structures.
 
 ## Reinvent: de novo sampling
-model_file = "priors/reinvent.prior"
+#model_file = "priors/reinvent.prior"
 
 ## LibInvent: find R-groups for the given scaffolds
 #model_file = "priors/libinvent.prior"
 #smiles_file = "scaffolds.smi"  # 1 scaffold per line with attachment points
 
 ## LinkInvent: find a linker/scaffold to link two fragments
-#model_file = "priors/linkinvent.prior"
-#smiles_file = "warheads.smi"  # 2 warheads per line separated with '|'
+model_file = "priors/linkinvent.prior"
+smiles_file = "configs/toml/warheads.smi"  # 2 warheads per line separated with '|'
 
 ## Mol2Mol: find molecules similar to the provided molecules
 #model_file = "priors/mol2mol_medium_similarity.prior"

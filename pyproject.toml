@@ -65,9 +65,9 @@ dependencies = [
   # Stick to PyTorch 1.12 for now, to "standardise" pickled models,
   # Stick to CUDA 11.3 for driver compatibility.
   # Requires --extra-index-url https://download.pytorch.org/whl/cu113
-  "torch==1.12.1+cu113",
-  "torchvision==0.13.1+cu113",  # Needed to log molecular images to Tensorboard.
-#  "torchaudio==0.12.1+cu113",
+  # "torch==1.12.1",
+  "torchvision==0.13.1",  # Needed to log molecular images to Tensorboard.
+#  "torchaudio==0.12.1",
   "tqdm >=4.64,<5",
   "typing_extensions >=4.0,<5",
   "xxhash >=3,<4",

@@ -10,7 +10,7 @@ FIXME: review again if both formats should be treated as one singular, tabular
 
 __all__ = ["TabFileReader", "get_dialect", "write_csv"]
 import csv
-from typing import List, Callable
+from typing import List, Callable, Union, Optional
 
 ACTION_CALLABLES = List[Callable[[str], str]]
 
@@ -89,7 +89,7 @@ class TabFileReader:
         return self._smilies
 
     @property
-    def header_line(self) -> str | None:
+    def header_line(self) -> Optional[str]:
         if not self._header_line:  # SMILES file format
             self._header_line = ["SMILES", "Comment"]
 

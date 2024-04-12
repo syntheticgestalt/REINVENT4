@@ -1,0 +1,13 @@
+{
+    "run_type": "sampling",
+    "use_cuda": false,
+    "json_out_config": "_sampling.json",
+    "parameters": {
+        "model_file": "priors/linkinvent.prior",
+        "smiles_file": "configs/toml/warheads.smi",
+        "output_file": "sampling.csv",
+        "num_smiles": 157,
+        "unique_molecules": true,
+        "randomize_smiles": true
+    }
+}
